@@ -14,10 +14,12 @@ a{
 }
 
 .container{
-    width: 100%;
-    max-width: 1200px;
+    max-width: 1230px;
     margin: 0 auto;
-    padding: 0 100px;
+}
+
+body{
+    background-color: #F5F5F5;
 }
 
 /* Header styles
@@ -59,8 +61,13 @@ a{
     background-color: #13B0F5;
     font-size: 25px;
     background-image: linear-gradient(90deg, #13B0F5, #CA24B4);
-    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-background-clip: text; /* For WebKit browsers like Chrome, Safari */
+    -moz-background-clip: text; /* (Rarely needed, but for older Firefox versions) */
+    -ms-background-clip: text; /* (Not usually supported, but for older IE versions) */
+    -o-background-clip: text;
     -webkit-text-fill-color: transparent;
+ 
 }
 
 .social_links{
@@ -152,6 +159,7 @@ a{
 
 .projects_wrapper{
     display: flex;
+    width: 100%;
     flex-direction: column;
     align-items: center;
 }
@@ -171,4 +179,69 @@ a{
     color: #666666;
     padding-top: 10px;
     line-height: 26px;
+}
+
+.cards_projects_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 33px;
+}
+
+.card{
+    max-width: 375px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-top: 62px;
+}
+
+.card_content_wrap{
+    padding: 20px;
+}
+
+.card_img{
+    border-radius: 20px 20px 0px 0px;
+}
+
+.card_title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #000;
+    text-align: left;
+}
+
+.card_text{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #666666;
+    line-height: 25px;
+    padding-top: 15px;
+}
+
+.card_project_stack{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #666666;
+    padding-top: 10px;
+    line-height: 26px;
+}
+
+.git_link_wrap{
+    display: flex;
+    padding-top: 25px;
+    align-items: center;
+    text-align: left;
+}
+
+.git_link{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+    padding-left: 10px;
+    text-decoration: underline;
 }
