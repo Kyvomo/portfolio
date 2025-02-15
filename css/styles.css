@@ -22,6 +22,11 @@ body{
     background-color: #F5F5F5;
 }
 
+p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #42446E;
+}
 /* Header styles
 =====================*/
 
@@ -62,12 +67,11 @@ body{
     font-size: 25px;
     background-image: linear-gradient(90deg, #13B0F5, #CA24B4);
     background-clip: text;
-    -webkit-background-clip: text; /* For WebKit browsers like Chrome, Safari */
-    -moz-background-clip: text; /* (Rarely needed, but for older Firefox versions) */
-    -ms-background-clip: text; /* (Not usually supported, but for older IE versions) */
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
     -o-background-clip: text;
     -webkit-text-fill-color: transparent;
- 
 }
 
 .social_links{
@@ -244,4 +248,63 @@ body{
     color: #000;
     padding-left: 10px;
     text-decoration: underline;
+}
+
+/* Footer styles
+=====================*/
+
+.footer{
+    padding-top: 40px;
+    height: 200px;
+    margin-top: 200px;
+}
+
+.footer_wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer_contacts{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 617px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_social_links_wrapper{
+    max-width: 130px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_border{
+    width: 100%;
+    margin-top: 42px;
+    border-bottom: 2px solid;
+    border-color: #141414;
+    opacity: 30%;
+}
+
+.subfooter_wrapper{
+    margin-top: 60px;
+}
+
+.subfooter_wrapper .nav_links{
+    justify-content: space-between;
+    max-width: 555px;
+}
+
+.subfooter_wrapper .nav_link{
+    margin: 0;
+}
+
+.subfooter_wrapper .nav_link:hover{
+    font-size: 14px;
 }
